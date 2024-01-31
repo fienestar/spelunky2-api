@@ -1,0 +1,24 @@
+{
+    "devDependencies": {
+        "@types/node": "^20.11.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3",
+        "@typescript-eslint/eslint-plugin": "^6.20.0",
+        "@typescript-eslint/parser": "^6.20.0",
+        "eslint": "^8.56.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "husky": "^9.0.7",
+        "lint-staged": "^15.2.1"
+    },
+    "lint-staged": {
+        "*.{js,json}": [
+            "npx eslint . --fix"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
