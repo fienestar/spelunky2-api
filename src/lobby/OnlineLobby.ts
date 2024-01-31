@@ -1,9 +1,10 @@
-import { OnlineLobbyPlayer, deserializeOnlineLobbyPlayer, serializeOnlineLobbyPlayer } from './OnlineLobbyPlayer';
-import { FixedArray, ONLINE_LOBBY_MAX_PLAYER } from '../constants';
-import { GameMode } from './GameMode';
 import { Socket, createSocket } from 'dgram';
+import { FixedArray } from '../FixedArray';
 import { Spelunky2Client } from '../Spelunky2Client';
-import { LobbyNotFoundError, UnexpectedSocketCloseError, TimeoutError } from './exception';
+import { ONLINE_LOBBY_MAX_PLAYER } from '../constants';
+import { GameMode } from './GameMode';
+import { OnlineLobbyPlayer, deserializeOnlineLobbyPlayer, serializeOnlineLobbyPlayer } from './OnlineLobbyPlayer';
+import { LobbyNotFoundError, TimeoutError, UnexpectedSocketCloseError } from './exception';
 import { send } from './utils';
 
 type OnlineLobbyPlayerList = FixedArray<OnlineLobbyPlayer | null, typeof ONLINE_LOBBY_MAX_PLAYER>;

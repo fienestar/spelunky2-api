@@ -1,0 +1,23 @@
+export enum PlayerCharacter{
+    YELLOW = 0,
+    MAGENTA = 1,
+    CYAN = 2,
+    BLACK = 3,
+    CINNABAR = 4,
+    GREEN = 5,
+    OLIVE = 6,
+    WHITE = 7,
+    CERULEAN = 8,
+    BLUE = 9,
+    LIME = 10,
+    LEMON = 11,
+    IRIS = 12,
+    GOLD = 13,
+    RED = 14,
+    PINK = 15,
+    VIOLET = 16,
+    GRAY = 17,
+    KHAKI = 18,
+    ORANGE = 19,
+    SIZE = 20
+}

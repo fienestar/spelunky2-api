@@ -1,16 +1,16 @@
 import { createSocket } from 'dgram';
+import { FixedArray } from './FixedArray';
 import {
-    DEFAULT_LEADERBOARD_SERVER_HOST,
-    DEFAULT_LEADERBOARD_SERVER_PORT,
     DEFAULT_GAME_SERVER_HOST,
     DEFAULT_GAME_SERVER_PORT,
-    FixedArray,
+    DEFAULT_LEADERBOARD_SERVER_HOST,
+    DEFAULT_LEADERBOARD_SERVER_PORT,
     GAME_SERVER_EDGE_HOSTS,
     GAME_SERVER_EDGE_PORTS,
 } from './constants';
+import { OnlineLobby } from './lobby/OnlineLobby';
 import { OnlineLobbyPlayer } from './lobby/OnlineLobbyPlayer';
 import { send } from './lobby/utils';
-import { OnlineLobby } from './lobby/OnlineLobby';
 
 export interface Spelunky2ClientOptions
 {

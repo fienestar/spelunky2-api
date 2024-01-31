@@ -1,5 +1,5 @@
 import { Platform } from '../Platform';
-import { PlayerCharacter } from '../constants';
+import { PlayerCharacter } from '../PlayerCharacter';
 import { GameMode } from './GameMode';
 import { ReadyState } from './ReadyState';
 
