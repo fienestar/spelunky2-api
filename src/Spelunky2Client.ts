@@ -8,6 +8,7 @@ import {
     GAME_SERVER_EDGE_HOSTS,
     GAME_SERVER_EDGE_PORTS,
 } from './constants';
+import { LeaderboardEntry, downloadLeaderboard } from './leaderboard';
 import { OnlineLobby } from './lobby/OnlineLobby';
 import { OnlineLobbyPlayer } from './lobby/OnlineLobbyPlayer';
 import { send } from './lobby/utils';
@@ -81,6 +82,7 @@ export class Spelunky2Client {
         return await OnlineLobby.join(this, code, player);
     }
 
-    getLeaderboard() {
+    async getLeaderboard(year: number, month: number, day: number): Promise<LeaderboardEntry[]> {
+        return await downloadLeaderboard(this, year, month, day);
     }
 }
