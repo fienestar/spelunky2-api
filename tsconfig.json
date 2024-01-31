@@ -1,19 +1,6 @@
 {
-    "compilerOptions": {
-        "target": "es2021",
-        "module": "commonjs",
-        "outDir": "./dist",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "resolveJsonModule": true
-    },
+    "extends": "./compilerOption.tsconfig.json",
     "include": [
         "src/**/*.ts"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/*.d.ts"
-    ],
+    ]
 }

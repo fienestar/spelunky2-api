@@ -1,5 +1,12 @@
-import { GameMode, OnlineLobby, OnlineLobbyPlayer, Platform, ReadyState, Spelunky2Client } from '..';
-import { PlayerCharacter } from '../PlayerCharacter';
+import {
+    GameMode,
+    OnlineLobby,
+    OnlineLobbyPlayer,
+    Platform,
+    PlayerCharacter,
+    ReadyState,
+    Spelunky2Client,
+} from '../src';
 
 const client = new Spelunky2Client;
 const p1: OnlineLobbyPlayer = {

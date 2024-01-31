@@ -1,4 +1,8 @@
 {
+    "name": "spelunky2",
+    "version": "0.0.1",
+    "description": "Unofficial Spelunky 2 API",
+    "main": "lib/index.js",
     "devDependencies": {
         "@types/node": "^20.11.10",
         "@typescript-eslint/eslint-plugin": "^6.20.0",
@@ -11,6 +15,9 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3"
     },
+    "files": [
+        "lib/**/*"
+    ],
     "lint-staged": {
         "*.{js,json}": [
             "npx eslint . --fix"
@@ -23,5 +30,12 @@
     },
     "dependencies": {
         "zstddec": "^0.1.0"
-    }
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "bugs": {
+        "url": "https://github.com/fienestar/spelunky2-api/issues"
+    },
+    "homepage": "https://github.com/fienestar/spelunky2-api#readme"
 }

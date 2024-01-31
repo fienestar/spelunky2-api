@@ -1,9 +1,5 @@
 import { writeFileSync } from 'fs';
-import { GameEnding } from '../GameEnding';
-import { Platform } from '../Platform';
-import { PlayerCharacter } from '../PlayerCharacter';
-import { Spelunky2Client } from '../Spelunky2Client';
-import { LeaderboardEntry } from '../leaderboard';
+import { GameEnding, LeaderboardEntry, Platform, PlayerCharacter, Spelunky2Client } from '../src';
 
 const client = new Spelunky2Client;
 
