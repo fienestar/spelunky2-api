@@ -1,4 +1,4 @@
-import {createSocket} from 'dgram';
+import { createSocket } from 'dgram';
 import {
     DEFAULT_LEADERBOARD_SERVER_HOST,
     DEFAULT_LEADERBOARD_SERVER_PORT,
@@ -8,9 +8,9 @@ import {
     GAME_SERVER_EDGE_HOSTS,
     GAME_SERVER_EDGE_PORTS,
 } from './constants';
-import {OnlineLobbyPlayer} from './lobby/OnlineLobbyPlayer';
-import {send} from './lobby/utils';
-import {OnlineLobby} from './lobby/OnlineLobby';
+import { OnlineLobbyPlayer } from './lobby/OnlineLobbyPlayer';
+import { send } from './lobby/utils';
+import { OnlineLobby } from './lobby/OnlineLobby';
 
 export interface Spelunky2ClientOptions
 {

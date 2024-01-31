@@ -1,7 +1,7 @@
-import {Platform} from '../Platform';
-import {PlayerCharacter} from '../constants';
-import {GameMode} from './GameMode';
-import {ReadyState} from './ReadyState';
+import { Platform } from '../Platform';
+import { PlayerCharacter } from '../constants';
+import { GameMode } from './GameMode';
+import { ReadyState } from './ReadyState';
 
 export interface OnlineLobbyPlayer{
     platform: Platform;

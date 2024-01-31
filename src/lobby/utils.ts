@@ -1,4 +1,4 @@
-import {Socket} from 'dgram';
+import { Socket } from 'dgram';
 
 export async function send(socket: Socket, host: string, port: number, buffer: Buffer) {
     return new Promise<number>((resolve, reject) => {

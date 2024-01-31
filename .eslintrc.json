@@ -20,6 +20,10 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "object-curly-spacing": [
+            2,
+            "always"
+        ],
         "no-unused-vars": "off",
         "no-use-before-define": "off",
         "require-jsdoc": "off",
